@@ -1,0 +1,687 @@
+<html>
+    <head>
+        <title>瑞士手表品牌榜</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script>
+        $(function () {
+        $('.menu-item').click(function () {
+        if (!$(this).hasClass('active')) {
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.menu-content-' + $(this).data('id')).css({'display': 'block'}).siblings().css({'display': 'none'});
+        }
+        })
+        })
+        </script>
+        <style>
+        .container {
+        padding: 40px 45px;
+        width: 100%;
+        }
+        .menu {
+        height: 70px;
+        background: #000000;
+        border-radius: 35px;
+        text-align: center;
+        }
+        .menu .menu-item {
+        line-height: 70px;
+        color: #ffffff;
+        font-family: SourceHanSansCN;
+        margin: 0 35px;
+        font-weight: bold;
+        display: inline-block;
+        padding: 0 35px;
+        font-size: 32px;
+        height: 70px;
+        }
+        .menu .active {
+        font-size: 36px;
+        color: #000000;
+        border-radius: 35px;
+        background: linear-gradient(0deg, #F1DA7D 0%, #FFF3D0 100%);
+        }
+        .menu-content-item {
+        position: relative;
+        padding: 40px 0;
+        }
+        .brand-image {
+        margin-top: 2%;
+        margin-left: 2%;
+        }
+        .brand-col, .score-col {
+        margin-left: 2%;
+        display: inline-block;
+        position: absolute;
+        top: 70px;
+        }
+        .score-col {
+        right: 0;
+        width: 99px;
+        }
+        .brand-name {
+        height: 46px;
+        overflow-wrap: break-word;
+        color: rgba(0, 0, 0, 1);
+        font-size: 48px;
+        font-family: SourceHanSansCN-Bold;
+        font-weight: 700;
+        text-align: left;
+        white-space: nowrap;
+        line-height: 50px;
+        }
+        .score-star {
+        margin-top: 20px;
+        position: relative;
+        width: 179px;
+        height: 34px;
+        }
+        .score-star img {
+        vertical-align: unset;
+        height: 34px;
+        position: absolute;
+        }
+        .width-1 {
+        width: 170px;
+        }
+        .width-2 {
+        width: 167px;
+        }
+        .width-3 {
+        width: 163px;
+        }
+        .width-4 {
+        width: 160px;
+        }
+        .width-5 {
+            width: 158px;
+        }
+        .width-6 {
+            width: 155px;
+        }
+        .width-7 {
+            width: 154px;
+        }
+        .width-8 {
+            width: 152px;
+        }
+        .width-9 {
+            width: 151px;
+        }
+        .star-background {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        height: 30px;
+        background: red;
+        }
+        .score {
+        height: 40px;
+        overflow-wrap: break-word;
+        color: rgba(255, 0, 0, 1);
+        font-size: 48px;
+        font-family: MiSans-Semibold;
+        font-weight: 600;
+        text-align: left;
+        white-space: nowrap;
+        line-height: 50px;
+        }
+        .score-text {
+        height: 23px;
+        overflow-wrap: break-word;
+        color: rgba(255, 0, 0, 1);
+        font-size: 24px;
+        font-family: SourceHanSansCN-Normal;
+        font-weight: normal;
+        text-align: left;
+        white-space: nowrap;
+        line-height: 50px;
+        margin: 14px 0 0 4px;
+        }
+        .jiange {
+        height: 3px;
+        background: #DCB57B;
+        opacity: 0.3;
+        }
+        .menu-content-2, .menu-content-3 {
+        display: none;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="text-center" style="height: 119px; background: #A41720; line-height: 49px; font-size: 51px; font-family: SourceHanSansCN; font-weight: bold; color: #FFFFFF; padding: 35px 0; margin: 0px;">
+            瑞士手表品牌榜
+        </div>
+        <div>
+            <img src="images/banner.jpg" style="width: 100%"/>
+        </div>
+        <div class="container">
+            <p style="font-family: SourceHanSansCN; font-weight: 400; color: #000000; line-height: 50px; font-size: 32px;">
+            手表什么牌子好?经专业评测的2023年手表十大品牌名单发布啦!居前十的有: 百达翡丽、江诗丹顿(Vacheron Constantin)、艾姆勒AIMULE、AudemarsPigeut爱彼、Ferhmen法赫曼、Rolex劳力士、LOSIAN雷炫、OMEGA欧米茄、LONGINES浪琴、伯爵(PIAGET)等，上榜的瑞士手表十大品牌榜单和著名手表品牌名单的是口碑好或知名度高、有实力的品牌，排名不分先后，仅供借鉴参考，想知道什么牌子的手表好?您可以多比较，选择自己满意的!</p>
+        </div>
+        <div style="height: 25px; background: #F7F7F7;"></div>
+        <div class="container">
+            <div class="menu">
+                <div class="menu-item active" data-id=1>品牌榜</div>
+                <div class="menu-item" data-id=2>好评榜</div>
+                <div class="menu-item" data-id=3>人气榜</div>
+            </div>
+            <div class="menu-content">
+                <div class="menu-content-1">
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking1.png">
+                        <img class="brand-image" src="./images/baidafeili.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">百达翡丽</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-1"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">99.0</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking2.png">
+                        <img class="brand-image" src="./images/jiangshidandun.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">江诗丹顿</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-1"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">98.3</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking3.png">
+                        <img class="brand-image" src="./images/aimule.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">AIMULE艾姆勒</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-2"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">97.5</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking4.png">
+                        <img class="brand-image" src="./images/aibi.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">爱彼</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-3"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">96.7</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking5.png">
+                        <img class="brand-image" src="./images/Ferhmen.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">Ferhmen法赫曼</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-4"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">96.5</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking6.png">
+                        <img class="brand-image" src="./images/rolex.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">Rolex劳力士</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-5"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">94.9</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking7.png">
+                        <img class="brand-image" src="./images/LOSIAN.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">LOSIAN雷炫</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-6"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">93.6</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking8.png">
+                        <img class="brand-image" src="./images/OMEGA.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">OMEGA欧米茄</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-7"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">92.6</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking9.png">
+                        <img class="brand-image" src="./images/Longines.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">Longines浪琴</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-8"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">92.0</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking10.png">
+                        <img class="brand-image" src="./images/PIAGET.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">PIAGET伯爵</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-9"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">91.7</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-content-2">
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking1.png">
+                        <img class="brand-image" src="./images/rolex.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">Rolex劳力士</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-1"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">99.7</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking2.png">
+                        <img class="brand-image" src="./images/aimule.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">AIMULE艾姆勒</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-1"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">98.5</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking3.png">
+                        <img class="brand-image" src="./images/aimule.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">OMEGA欧米茄</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-1"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">97.7</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking4.png">
+                        <img class="brand-image" src="./images/Ferhmen.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">Ferhmen法赫曼</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-2"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">97.4</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking5.png">
+                        <img class="brand-image" src="./images/aibi.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">爱彼</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-2"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">96.3</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking6.png">
+                        <img class="brand-image" src="./images/Longines.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">Longines浪琴</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-2"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">95.9</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking7.png">
+                        <img class="brand-image" src="./images/LOSIAN.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">LOSIAN雷炫</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-3"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">95.6</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking8.png">
+                        <img class="brand-image" src="./images/baidafeili.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">百达翡丽</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-3"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">95.2</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking9.png">
+                        <img class="brand-image" src="./images/jiangshidandun.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">江诗丹顿</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-4"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">95.0</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking10.png">
+                        <img class="brand-image" src="./images/PIAGET.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">PIAGET伯爵</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-5"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">93.6</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-content-3">
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking1.png">
+                        <img class="brand-image" src="./images/rolex.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">Rolex劳力士</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-1"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">99.8</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking2.png">
+                        <img class="brand-image" src="./images/aimule.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">AIMULE艾姆勒</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-1"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">98.5</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking3.png">
+                        <img class="brand-image" src="./images/jiangshidandun.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">江诗丹顿</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-1"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">98.0</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking4.png">
+                        <img class="brand-image" src="./images/Ferhmen.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">Ferhmen法赫曼</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-2"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">97.7</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking5.png">
+                        <img class="brand-image" src="./images/baidafeili.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">百达翡丽</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-2"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">96.9</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking6.png">
+                        <img class="brand-image" src="./images/OMEGA.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">OMEGA欧米茄</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-3"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">95.4</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking7.png">
+                        <img class="brand-image" src="./images/aibi.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">爱彼</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-5"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">95.0</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking8.png">
+                        <img class="brand-image" src="./images/LOSIAN.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">LOSIAN雷炫</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-6"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">94.5</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking9.png">
+                        <img class="brand-image" src="./images/IWC.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">IWC万国</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-7"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">93.8</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                    <div class="jiange"></div>
+                    <div class="menu-content-item">
+                        <img class="ranking-image" src="./images/ranking10.png">
+                        <img class="brand-image" src="./images/Longines.jpg">
+                        <div class="brand-col">
+                            <span class="brand-name">Longines浪琴</span>
+                            <br />
+                            <div class="score-star">
+                                <div class="star-background width-8"></div>
+                                <img src="./images/star.png"/>
+                            </div>
+                        </div>
+                        <div class="score-col flex-col justify-between">
+                            <span class="score">92.6</span>
+                            <span class="score-text">人气指数</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
