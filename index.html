@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>瑞士手表品牌榜</title>
         <link rel="stylesheet" href="bootstrap.min.css">
         <script src="jquery.min.js"></script>
@@ -11,6 +13,15 @@
         $(this).addClass('active').siblings().removeClass('active');
         $('.menu-content-' + $(this).data('id')).css({'display': 'block'}).siblings().css({'display': 'none'});
         }
+        })
+        $('.up-down').click(function () {
+            if ($('.tit-des').hasClass('showmore')) {
+                $('.tit-des').removeClass('showmore');
+                $(this).children('span').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-up');
+            } else {
+                $('.tit-des').addClass('showmore');
+                $(this).children('span').removeClass('glyphicon-menu-up').addClass('glyphicon-menu-down');
+            }
         })
         })
         </script>
@@ -147,6 +158,19 @@
         .menu-content-2, .menu-content-3 {
         display: none;
         }
+        .tit-des.showmore p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        }
+        .up-down {
+            text-align: center;
+            line-height: 50px;
+            font-weight: 400;
+            font-size: 32px;
+            color: red;
+        }
         </style>
     </head>
     <body>
@@ -156,9 +180,10 @@
         <div>
             <img src="images/banner.jpg" style="width: 100%"/>
         </div>
-        <div class="container">
+        <div class="container tit-des showmore">
             <p style="font-family: SourceHanSansCN; font-weight: 400; color: #000000; line-height: 50px; font-size: 32px;">
-            手表什么牌子好?经专业评测的2023年手表十大品牌名单发布啦!居前十的有: 百达翡丽、江诗丹顿(Vacheron Constantin)、艾姆勒AIMULE、AudemarsPigeut爱彼、Ferhmen法赫曼、Rolex劳力士、LOSIAN雷炫、OMEGA欧米茄、LONGINES浪琴、伯爵(PIAGET)等，上榜的瑞士手表十大品牌榜单和著名手表品牌名单的是口碑好或知名度高、有实力的品牌，排名不分先后，仅供借鉴参考，想知道什么牌子的手表好?您可以多比较，选择自己满意的!</p>
+            手表什么牌子好？经专业评测的2023年瑞士手表十大品牌名单发布啦！居前十的有：百达翡丽、Vacheron Constantin江诗丹顿、AIMULE艾姆勒、AudemarsPigeut爱彼、Ferhmen法赫曼、Rolex劳力士、LOSIAN雷炫、OMEGA欧米茄、LONGINES浪琴等，上榜的瑞士手表十大品牌榜单是口碑好或知名度高、有实力的品牌，排名不分先后，仅供借鉴参考，想知道什么牌子的手表好？您可以多比较，选择自己满意的！</p>
+            <div class="up-down"><span class="glyphicon glyphicon-menu-down"></span></div>
         </div>
         <div style="height: 25px; background: #F7F7F7;"></div>
         <div class="container">
@@ -182,15 +207,15 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">99.0</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">品牌指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
                     <div class="menu-content-item">
                         <img class="ranking-image" src="./images/ranking2.png">
-                        <img class="brand-image" src="./images/jiangshidandun.jpg">
+                        <img class="brand-image" src="./images/aimule.jpg">
                         <div class="brand-col">
-                            <span class="brand-name">江诗丹顿</span>
+                            <span class="brand-name">AIMULE艾姆勒</span>
                             <br />
                             <div class="score-star">
                                 <div class="star-background width-1"></div>
@@ -199,15 +224,15 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">98.3</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">品牌指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
                     <div class="menu-content-item">
                         <img class="ranking-image" src="./images/ranking3.png">
-                        <img class="brand-image" src="./images/aimule.jpg">
+                        <img class="brand-image" src="./images/jiangshidandun.jpg">
                         <div class="brand-col">
-                            <span class="brand-name">AIMULE艾姆勒</span>
+                            <span class="brand-name">江诗丹顿</span>
                             <br />
                             <div class="score-star">
                                 <div class="star-background width-2"></div>
@@ -216,7 +241,7 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">97.5</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">品牌指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
@@ -233,7 +258,7 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">96.7</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">品牌指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
@@ -250,7 +275,7 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">96.5</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">品牌指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
@@ -267,7 +292,7 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">94.9</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">品牌指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
@@ -284,7 +309,7 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">93.6</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">品牌指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
@@ -301,7 +326,7 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">92.6</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">品牌指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
@@ -318,7 +343,7 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">92.0</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">品牌指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
@@ -335,16 +360,16 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">91.7</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">品牌指数</span>
                         </div>
                     </div>
                 </div>
                 <div class="menu-content-2">
                     <div class="menu-content-item">
                         <img class="ranking-image" src="./images/ranking1.png">
-                        <img class="brand-image" src="./images/Rolex.jpg">
+                        <img class="brand-image" src="./images/ferhmen.jpg">
                         <div class="brand-col">
-                            <span class="brand-name">Rolex劳力士</span>
+                            <span class="brand-name">Ferhmen法赫曼</span>
                             <br />
                             <div class="score-star">
                                 <div class="star-background width-1"></div>
@@ -353,7 +378,7 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">99.7</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">好评指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
@@ -370,13 +395,13 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">98.5</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">好评指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
                     <div class="menu-content-item">
                         <img class="ranking-image" src="./images/ranking3.png">
-                        <img class="brand-image" src="./images/aimule.jpg">
+                        <img class="brand-image" src="./images/OMEGA.jpg">
                         <div class="brand-col">
                             <span class="brand-name">OMEGA欧米茄</span>
                             <br />
@@ -387,15 +412,15 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">97.7</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">好评指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
                     <div class="menu-content-item">
                         <img class="ranking-image" src="./images/ranking4.png">
-                        <img class="brand-image" src="./images/ferhmen.jpg">
+                        <img class="brand-image" src="./images/Rolex.jpg">
                         <div class="brand-col">
-                            <span class="brand-name">Ferhmen法赫曼</span>
+                            <span class="brand-name">Rolex劳力士</span>
                             <br />
                             <div class="score-star">
                                 <div class="star-background width-2"></div>
@@ -404,7 +429,7 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">97.4</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">好评指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
@@ -421,7 +446,7 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">96.3</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">好评指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
@@ -438,7 +463,7 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">95.9</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">好评指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
@@ -455,7 +480,7 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">95.6</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">好评指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
@@ -472,7 +497,7 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">95.2</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">好评指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
@@ -489,7 +514,7 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">95.0</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">好评指数</span>
                         </div>
                     </div>
                     <div class="jiange"></div>
@@ -506,7 +531,7 @@
                         </div>
                         <div class="score-col flex-col justify-between">
                             <span class="score">93.6</span>
-                            <span class="score-text">人气指数</span>
+                            <span class="score-text">好评指数</span>
                         </div>
                     </div>
                 </div>
@@ -530,9 +555,9 @@
                     <div class="jiange"></div>
                     <div class="menu-content-item">
                         <img class="ranking-image" src="./images/ranking2.png">
-                        <img class="brand-image" src="./images/aimule.jpg">
+                        <img class="brand-image" src="./images/LOSIAN.jpg">
                         <div class="brand-col">
-                            <span class="brand-name">AIMULE艾姆勒</span>
+                            <span class="brand-name">LOSIAN雷炫</span>
                             <br />
                             <div class="score-star">
                                 <div class="star-background width-1"></div>
@@ -632,9 +657,9 @@
                     <div class="jiange"></div>
                     <div class="menu-content-item">
                         <img class="ranking-image" src="./images/ranking8.png">
-                        <img class="brand-image" src="./images/LOSIAN.jpg">
+                        <img class="brand-image" src="./images/aimule.jpg">
                         <div class="brand-col">
-                            <span class="brand-name">LOSIAN雷炫</span>
+                            <span class="brand-name">AIMULE艾姆勒</span>
                             <br />
                             <div class="score-star">
                                 <div class="star-background width-6"></div>
